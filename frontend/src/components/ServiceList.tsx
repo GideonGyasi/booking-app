@@ -7,7 +7,9 @@ type Service = {
   name: string;
   description: string;
   price: number;
+  imageUrl: string;
 };
+
 
 const ServiceList: React.FC = () => {
   const [services, setServices] = useState<Service[]>([]);
@@ -16,7 +18,7 @@ const ServiceList: React.FC = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/services`);
+       const response = await axios.get(`https://booking-app-production-554b.up.railway.app/api/services`);
         setServices(response.data);
       } catch (error) {
         console.error('Error fetching services:', error);
@@ -42,6 +44,7 @@ const ServiceList: React.FC = () => {
               name={service.name}
               description={service.description}
               price={service.price}
+              imageUrl={service.imageUrl}
             />
           ))}
         </div>
