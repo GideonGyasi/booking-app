@@ -10,7 +10,7 @@ type Service = {
   imageUrl: string;
 };
 
-
+/**SERVICE LIST */
 const ServiceList: React.FC = () => {
   const [services, setServices] = useState<Service[]>([]);
   const [loading, setLoading] = useState(true);
