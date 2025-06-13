@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GideonGyasi/xconcierge-backend.git"
+    "url": "git+https://github.com/GideonGyasi/booking-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GideonGyasi/xconcierge-backend/issues"
+    "url": "https://github.com/GideonGyasi/booking-app/issues"
   },
-  "homepage": "https://github.com/GideonGyasi/xconcierge-backend#readme",
+  "homepage": "https://github.com/GideonGyasi/booking-app#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
