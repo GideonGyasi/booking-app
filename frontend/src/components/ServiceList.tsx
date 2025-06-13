@@ -7,7 +7,9 @@ type Service = {
   name: string;
   description: string;
   price: number;
+  imageUrl: string;
 };
+
 
 const ServiceList: React.FC = () => {
   const [services, setServices] = useState<Service[]>([]);
@@ -42,6 +44,7 @@ const ServiceList: React.FC = () => {
               name={service.name}
               description={service.description}
               price={service.price}
+              imageUrl={service.imageUrl}
             />
           ))}
         </div>
