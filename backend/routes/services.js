@@ -1,17 +1,11 @@
-import express from 'express';
-import pool from '../database/pool.js';
+const express = require('express');
+const pool = require('../db/pool');
 
 const router = express.Router();
 
-// Day 1 slice
 router.get('/', async (req, res) => {
-  try {
-    const [rows] = await pool.query('SELECT id, name, description, price, image_url AS imageUrl FROM services');
-    res.json(rows);
-  } catch (err) {
-    console.error('Error fetching services:', err);
-    res.status(500).json({ error: 'Server error' });
-  }
+  const [rows] = await pool.query('SELECT * FROM services');
+  res.json(rows);
 });
 
-export default router;
+module.exports = router;
