@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
     `);
     res.json(rows);
   } catch (error) {
-    console.error('🔥 Error fetching services:', error.message);  // <-- log the real error
+    console.error('Error fetching services:', error.message);  // <-- log the real error
     res.status(500).json({ message: 'Internal server error', error: error.message }); // send it in response
   }
 });
