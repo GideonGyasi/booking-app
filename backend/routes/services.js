@@ -3,7 +3,7 @@ import pool from '../database/pool.js';
 
 const router = express.Router();
 
-// services route - Day 1 slice
+// Day 1 slice
 router.get('/', async (req, res) => {
   try {
     const [rows] = await pool.query('SELECT id, name, description, price, image_url AS imageUrl FROM services');
