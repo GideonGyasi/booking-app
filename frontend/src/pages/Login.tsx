@@ -15,7 +15,7 @@ const Login: React.FC<Props> = ({ onSuccess, onSwitchToRegister }) => {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.post('https://booking-app-production-554b.up.railway.app//api/auth/login', {
+      const res = await axios.post('https://booking-app-production-554b.up.railway.app/api/auth/login', {
         email,
         password
       });
