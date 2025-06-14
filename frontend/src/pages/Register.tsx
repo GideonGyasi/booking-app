@@ -17,7 +17,7 @@ const Register: React.FC<Props> = ({ onClose }) => {
     setError('');
     setSuccess('');
     try {
-      await axios.post('https://booking-app-production-554b.up.railway.app//api/auth/register', {
+      await axios.post('https://booking-app-production-554b.up.railway.app/api/auth/register', {
         name,
         email,
         password,
