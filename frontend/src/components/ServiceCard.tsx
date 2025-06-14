@@ -12,7 +12,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ name, description, price, imageUr
     <div className="bg-white border border-gray-200 rounded-2xl shadow hover:shadow-md transition overflow-hidden flex flex-col">
       <img src={imageUrl} alt={name} className="h-48 w-full object-cover" />
       <div className="p-5 flex flex-col flex-grow justify-between">
-        <div>
+         <div>
           <h2 className="text-xl font-semibold text-gray-800 mb-1">{name}</h2>
           <p className="text-sm text-gray-600 mb-4">{description}</p>
         </div>
